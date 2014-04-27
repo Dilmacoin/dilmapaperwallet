@@ -6330,7 +6330,7 @@ Bitcoin.Util = {
 		#calibratearea #calibrationinfo { clear: both; text-align: center; color: #990000; padding: 10px 0;}
 		#backarea .backsvg { width: 1010px; height: 331px; border: 0; margin: 0; padding: 0; left: 0; }
 
-		#printeradjust { color: #F08D01; font-size: 13px; float: right; text-align: right; margin-top: 5px; }
+		#printeradjust { color: #F08D01; font-size: 13px; float: right; text-align: right; margin-top: 15px; }
 		#printeradjust span { background-color: rgba(0,0,0,0); padding: 2px 3px; font-family: "Courier New", Courier, monospace; font-weight: bold; font-size: 13px; border-radius: 50%; width: 15px; height: 10px; box-sizing: border-box; }
 		#printeradjust a:hover span { background-color: rgba(0,0,0,0.5); color: #fff; }
 		#printeradjust a, #printeradjust a:hover {text-decoration: none; color: #000;}
@@ -6623,7 +6623,7 @@ Bitcoin.Util = {
 
 						<div style="float: right; width: 410px; margin-left: 30px;">
 
-              <img id="designPreview" src="images/finished-sample-sealed.jpg" width="400" height="266" alt="Sealed Wallet" >
+              <img id="designPreview" src="images/finished-sample-sealed.png" width="400" height="266" alt="Sealed Wallet" >
 
 							<h2>Basic security checklist:</h2>
 							<ul>
@@ -6771,7 +6771,7 @@ Bitcoin.Util = {
 
             <p><span style="color:red;":>NEW:</span> <a href="https://bitcoinpaperwallet.com/?p=dogecoin#purchase" target="_blank" class="nicerButton" style="width: 550px;">Purchase hologram stickers and/or zip-sealing bags from BitcoinPaperWallet</a></p>
 
-						<p><img src="images/finished-sample-sealed.jpg" width="400" height="266" alt="Sealed Wallet"></p>
+						<p><img src="images/finished-sample-sealed.png" width="400" height="266" alt="Sealed Wallet"></p>
 
 						<h1>How to add funds to your wallet:</h1>
 
@@ -6813,7 +6813,7 @@ Bitcoin.Util = {
           <li>obter prova de que o arquivo foi realmente gerado por Girino Vey cuja chave pública pode ser confirmada em <a href="http://girino.org/pgp">http://girino.org/pgp</a></li>
           </ol>
           Por exemplo, se você tiver o GPG instalado, abra uma console de terminal, entre na pasta onde está localizado este arquivo e digite:<br />
-          <code>  gpg --recv-key <br />
+          <code>  gpg --recv-key 4A6AD993<br />
           gpg --verify --with-fingerprint index.html.sig index.html</code>
          	<br /><br />e então verificar a "impressão digital" a assinatura com a <a href="http://girino.org/pgp">impressão digital PGP/GPG publicada</a>.<br /><br />
         	<a href="http://www.google.com/search?q=how+to+verify+PGP+%22.sig%22+signature+on+file">Aprenda aqui como verificar uma assinatura PGP/GPG &raquo;</a>
@@ -7890,7 +7890,7 @@ Bitcoin.Util = {
 		if (whichDesign == 'default') {
 			var myFront = './images/front-300dpi.jpg';
 			var myBack = './images/back-300dpi.jpg';
-			var myPreview = './images/finished-sample-sealed.jpg';
+			var myPreview = './images/finished-sample-sealed.png';
 		} else {
 			var myFront = './images/front-300dpi-' + whichDesign + '.jpg';
 			var myBack = './images/back-300dpi-' + whichDesign + '.jpg';
