@@ -1,29 +1,29 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="iso-8859-1">
+	<meta charset="utf-8">
 	<!--
 
-    generate-wallet.html (from http://dogecoinpaperwallet.net)
+    generate-wallet.html (from http://girino.org/dilmapaperwallet)
 
-    email: Wells Riley (wells.riley@me.com)
+    email: Girino Vey (paperwallet@girino.org)
 
     generate-wallet.html is always distributed with a PGP signature "generate-wallet.html.sig" which you can use to validate the integrity and authorship of this file like so:
 
     gpg --verify --with-fingerprint generate-wallet.html.sig generate-wallet.html
 
-    Wallet design is �Copyright 2014 Wells Riley. See below for other credits and copyrights.
+    Wallet design is �Copyright 2014 Girino Vey. See below for other credits and copyrights.
 
     **************************************************************
-		* github: http://github.com/wellsriley/dogecoinpaperwallet
-    * Please donate dogecoin: DAWGAuMCMYCwHoU6DMNkGwrB9rGG3sY1t7
-    * Bitcoin works too: 1BrQpq4qdxnwJoD2WKKNMo4PLa8oi2mxAU
+		* github: http://github.com/Dilmacoin/dilmapaperwallet
+    * Please donate dilmacoin: DGirino9uDPavPkNejRHmhjdAwujaQhm7e
+    * Bitcoin works too: 1GiRiNoKznfGbt8bkU1Ley85TgVV7ZTXce
     **************************************************************
 		* The starting point for this code was the excellent single-file bitaddress.org project.
 	  * Bitcoin Donation Address: 1NiNja1bUmhSoTXozBRBEtR8LeF9TGbZBN
 		* GitHub Repository:	https://github.com/pointbiz/bitaddress.org
 	  **************************************************************
-	  Portions of this code are �Copyright 2013 Canton Becker (https://bitcoinpaperwallet.com/) and Marcos Ojeda (https://generic.cx/), bitaddress.org.
+	  Portions of this code are �Copyright 2013 Canton Becker (https://bitcoinpaperwallet.com/) and Marcos Ojeda (https://generic.cx/), bitaddress.org.
 
 		Notice of Copyrights and Licenses:
 		***********************************
@@ -65,7 +65,7 @@
 		SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		-->
 
-	<title>Dogecoin Paper Wallet Generator. Wow.</title>
+	<title>Dilmacoin Paper Wallet Generator.</title>
 
 
 	<script type="text/javascript">
@@ -5740,7 +5740,7 @@ Bitcoin.Util = {
 	// Lightweight JavaScript-based User-Agent string parser
 	// https://github.com/faisalman/ua-parser-js
 	//
-	// Copyright � 2012-2013 Faisalman <fyzlman@gmail.com>
+	// Copyright � 2012-2013 Faisalman <fyzlman@gmail.com>
 	// Dual licensed under GPLv2 & MIT
 
 	(function (window, undefined) {
@@ -6312,7 +6312,7 @@ Bitcoin.Util = {
 		.pubkeyhex { word-wrap: break-word; }
 		.faqs ol { padding: 0 0 0 25px; }
 		.faqs li { padding: 3px 0; }
-		body { margin-top: 0; font-family: Comic Sans ms; background-image:url(images/webpage-background.png); background-repeat: repeat-y; background-position: center; }
+		body { margin-top: 0; font-family: Arial; background-image:url(images/webpage-background.png); background-repeat: repeat-y; background-position: center; }
 
 		h1 { font-size: 32px; line-height: 90px; font-weight: 100; color: #555; margin:20px 0; padding:0; }
 
@@ -6505,7 +6505,7 @@ Bitcoin.Util = {
 				padding: 4px 8px;
 				margin: 0 2px 0 0;
 				position: relative;
-				top: 3px;
+				top: 14px;
 				z-index: 110;
 				cursor: pointer;
 			}
@@ -6564,8 +6564,8 @@ Bitcoin.Util = {
 <body onclick="SecureRandom.seedTime();" onkeypress="SecureRandom.seedTime();" onmousemove="ninja.seeder.seed(event);" onLoad="guessPrinterSettings(); setDesign(ninja.getQueryString()['design']);">
 	<div id="main">
   	<div id="logoback">
-			<div id="tagline">Open Source JavaScript Dogecoin Wallet Generator</div>
-			<div id="tagsite">Wow. Many doge. Very wallet.</div>
+			<div id="tagline">Gerador de paper wallet para Dilmacoin em Javascript.</div>
+			<div id="tagsite">Dilmacoin wallet.</div>
 
 			<div class="menu" id="menu">
       	<div id="printeradjust">
@@ -6576,17 +6576,17 @@ Bitcoin.Util = {
           <a href="#" onClick="printShift(-1); return(false);"><span>-</span></a><input name="printershift" id="printershift" size="2" value="5" onChange="updateCalibrationInfo();" /><a href="#" onClick="printShift(1); return(false);"><span>+</span></a>
         </div>
 
-				<div class="tab selected" id="landwallet" onClick="ninja.tabSwitch(this);">Instructions</div>
-				<div class="tab" id="calibratewallet" onClick="ninja.tabSwitch(this);">1. Calibrate Printer</div>
-				<div class="tab" id="paperwallet" onClick="ninja.tabSwitch(this);">2. Print Front</div>
-				<div class="tab" id="backwallet" onClick="ninja.tabSwitch(this);">3. Print Back</div>
-				<div class="tab" id="foldwallet" onClick="ninja.tabSwitch(this);">4. Cut, Fold, Seal &amp; Fund</div>
+				<div class="tab selected" id="landwallet" onClick="ninja.tabSwitch(this);">Instruções</div>
+				<div class="tab" id="calibratewallet" onClick="ninja.tabSwitch(this);">1. Calibragem</div>
+				<div class="tab" id="paperwallet" onClick="ninja.tabSwitch(this);">2. Imprime frente</div>
+				<div class="tab" id="backwallet" onClick="ninja.tabSwitch(this);">3. Imprime verso</div>
+				<div class="tab" id="foldwallet" onClick="ninja.tabSwitch(this);">4. Cortar, colar, dobrar e usar</div>
 			</div>
 		</div><!-- end logoback -->
 
 		<div id="generate">
-			<div id="generatelabelmovemouse"><blink>Be a good shibe and move your mouse around.</blink></div>
-			<p id="generatelabelbitcoinaddress">(Doge loves chasing the pointer. It makes the wallet much secure.)</p>
+			<div id="generatelabelmovemouse"><blink>Por favor, mova seu mouse aleatoriamente para inicializar o gerador de chaves.</blink></div>
+			<p id="generatelabelbitcoinaddress">(Este passo garante que as carteiras geradas serão aleatórias e mais seguras.)</p>
 		</div>
 
 		<div id="wallets">
@@ -6594,7 +6594,7 @@ Bitcoin.Util = {
 			<div id="landarea" class="walletarea">
 				<div class="instructionsarea">
 					<div class="notes">
-						<h1>Print out a beautiful and secure wallet for your dogecoins.</h1>
+						<h1>Imprima uma carteira bonita e segura para suas Dilmas.</h1>
 
 						<div style="float: left; width: 500px; margin-top: -20px;">
 
@@ -6668,9 +6668,9 @@ Bitcoin.Util = {
 			<div id="calibratearea" class="walletarea">
 				<div class="commands">
 					<div id="calibratecommands">
-						<p id="calibrateinstructions" class="instructions">To calibrate your output, <a href="#" onClick="doPrint('calibration');">print out this page</a> in LANDSCAPE (wide) format. Based on the results, adjust the "zoom" and "horizontal shift" until your printed ruler approximates a real ruler, and leaves equal margins on the left and right sides of the page.</p>
+						<p id="calibrateinstructions" class="instructions">Para calibrar sua impressora, <a href="#" onClick="doPrint('calibration');">imprima essa página</a> no modo PAISAGEM. De acordo com o resultado, ajuste o "zoom" e o "horizontal shift" Até que a régua impressa esteja de um tamanho próximo ao real, com margens iguais de ambos os lados da página.</p>
 						<span class="print">
-              <a href="#" class="nicerButton" onClick="doPrint('calibration');">Print Calibration Test</a>
+              <a href="#" class="nicerButton" onClick="doPrint('calibration');">Imprimir Calibragem</a>
             </span>
 					</div>
 				</div>
@@ -6693,19 +6693,19 @@ Bitcoin.Util = {
 								<div style="display: none;">
 			            <span><label id="paperlabelhideart">Hide Art?</label> <input type="checkbox" id="paperart" onChange="ninja.wallets.paperwallet.toggleArt(this); " /></span>
 			            <span><label id="paperlabeladdressesperpage">Addresses per page:</label> <input type="text" id="paperlimitperpage" /></span>
-									<span><label id="paperlabeladdressestogenerate">Addresses to generate:</label> <input type="text" id="paperlimit" /></span>
+									<span><label id="paperlabeladdressestogenerate">Endereços para gerar:</label> <input type="text" id="paperlimit" /></span>
 			          </div>
 
 			          <div id="keyButtons" style="display: block; float: left;">
-			          	<input type="button" id="papergenerate" value="Random-generate new keys" onClick="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked); printCounter=0;" />
+			          	<input type="button" id="papergenerate" value="Gerar nova chave aleatória" onClick="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked); printCounter=0;" />
 
-			          	<input type="button" id="papergenerate" value="Supply my own key or vanity address..." onClick="document.getElementById('keyButtons').style.display='none'; document.getElementById('supplyKeys').style.display='block';" />
+			          	<input type="button" id="papergenerate" value="Usar minha própria chave (vanity address)..." onClick="document.getElementById('keyButtons').style.display='none'; document.getElementById('supplyKeys').style.display='block';" />
 			          </div>
 
 			          <div id="supplyKeys" style="display: none;">
 			          	<p style="padding: 0; margin: 0;">
-			          		<input placeholder="Paste your PRIVATE key here" id="suppliedPrivateKey" name="suppliedPrivateKey" size="75" spellcheck="false" style="font-family: ubuntu_mono_bold, 'Courier New', Courier, monospace;" />&nbsp;
-			          		<input type="button" id="papergenerate" value="Test &amp; Apply &raquo;" onClick="testAndApplyVanityKey();" />
+			          		<input placeholder="Cole sua chave PRIVADA aqui" id="suppliedPrivateKey" name="suppliedPrivateKey" size="75" spellcheck="false" style="font-family: ubuntu_mono_bold, 'Courier New', Courier, monospace;" />&nbsp;
+			          		<input type="button" id="papergenerate" value="Testar e aplicar &raquo;" onClick="testAndApplyVanityKey();" />
 			          	</p>
 			          	<p style="margin: 0; padding:0;">
 			          		<a href="#" style="font-size: 11px;" onClick="document.getElementById('keyButtons').style.display='block'; document.getElementById('supplyKeys').style.display='none';">&laquo; Back</a>
@@ -6713,7 +6713,7 @@ Bitcoin.Util = {
 			          </div>
 
 								<span class="print">
-			            <a href="#" class="nicerButton" onClick="doPrint('generate');">Print Wallet Front</a>
+			            <a href="#" class="nicerButton" onClick="doPrint('generate');">Imprimir Frente</a>
 			          </span>
 			          <br clear="all" />
 							</div>
@@ -6729,9 +6729,9 @@ Bitcoin.Util = {
 			<div id="backarea" class="walletarea">
 				<div class="commands">
 					<div id="backcommands">
-						<p id="backinstructions" class="instructions highlighted">Place the sheet you just printed back into the printer (be sure it will print on the <b>back</b>!). And don't forget to print in LANDSCAPE mode!</p>
+						<p id="backinstructions" class="instructions highlighted">Coloque a folha que você acabou de imprimir novamente na impressora (Assegure-se de que virou a folha!). E não se esqueça de imprimir em modo PAISAGEM!</p>
 						<span class="print">
-              <a href="#" class="nicerButton" onClick="doPrint();">Print Wallet Back</a>
+              <a href="#" class="nicerButton" onClick="doPrint();">Imprimir verso</a>
             </span>
 					</div>
           <br clear="all" />
@@ -6751,7 +6751,7 @@ Bitcoin.Util = {
 				<div class="instructionsarea">
 					<div class="notes">
 
-					  <h1>How to cut and fold your dogecoin wallet:</h1>
+					  <h1>Como cortar, dobrar e usar sua carteira de papel:</h1>
 
 					  <div style="border-radius:5px;background:#C6EAFF;padding:4px 20px 1px;font-size:15px;margin:20px 0;">
 					  	<p>Looking for a comprehensive guide to using dogecoin paper wallets? Check out <a href="http://dogecointutorial.com/paper-wallet.html" target="_blank">Dogecoin Tutorial</a>!</p>
@@ -6792,13 +6792,13 @@ Bitcoin.Util = {
 				<div>
 					<span class="item"><b>Support Dogecoin Paper Wallet</b></span>
           <span class="item" style="font-size: 11px; font-family: 'Courier New', Courier, monospace;">
-            <strong>very dogecoin</strong>: DAWGAuMCMYCwHoU6DMNkGwrB9rGG3sY1t7<br />
-            <strong>such bitcoin</strong>:&nbsp; 1BrQpq4qdxnwJoD2WKKNMo4PLa8oi2mxAU<br />
+            <strong>Dilmacoin</strong>: DGirino9uDPavPkNejRHmhjdAwujaQhm7e<br />
+            <strong>Bitcoin</strong>:&nbsp; 1GiRiNoKznfGbt8bkU1Ley85TgVV7ZTXce<br />
           </span>
         </div>
         <div class="copyright">
         	<p>
-        		&copy; Copyright 2014 <a href="http://wells.ee">Wells Riley</a><br />
+        		&copy; Copyright 2014 <a href="http://dilmacoin.org">Dilmacoin</a><br />
         		Other credits and JavaScript copyrights are included in the source.<br />
         		<strong>No warranty.</strong>
         	</p>
@@ -6807,27 +6807,27 @@ Bitcoin.Util = {
 			<div class="authorpgp">
 				<div id="siginfo" style="display: none; position: absolute; top: -300px;">
           <p class="closeme"><a href="#" onClick="document.getElementById('siginfo').style.display='none'; return(false);">X</a></p>
-          After downloading and extracting the <a href="https://github.com/wellsriley/dogecoinpaperwallet" target="_blank">ZIP package</a> for this generator, you should find a file named <b>generate-wallet.html.sig</b>
-          which you can use to:
-          <ol><li> verify that <strong>generate-wallet.html</strong> hasn't been tampered with, and</li>
-          <li>get proof that it really was authored by Wells Riley (wells.riley@me.com) whose public key and fingerprint can be confirmed at <a href="http://wells.ee/pgp">http://wells.ee/pgp</a></li>
+          Após fazer o download e abrir o <a href="https://github.com/Dilmacoin/dilmapaperwallet" target="_blank">arquivo ZIP</a> deste gerador, você irá encontrar um arquivo chamado <b>index.html.sig</b>
+          que pode ser usado para:
+          <ol><li> verificar que o arquivo <strong>index.html</strong> não foi alterado, e</li>
+          <li>obter prova de que o arquivo foi realmente gerado por Girino Vey cuja chave pública pode ser confirmada em <a href="http://girino.org/pgp">http://girino.org/pgp</a></li>
           </ol>
-          For example, if you have GPG installed, just open the terminal, change directory (cd) to where this file lives, and type:<br />
-          <code>  gpg --recv-key F14D9476<br />
-          gpg --verify --with-fingerprint generate-wallet.html.sig generate-wallet.html</code>
-         	<br /><br />And then verify the signature's fingerprint against Wells Riley's <a href="http://wells.ee/pgp">published PGP/GPG fingerprint</a>.<br /><br />
-        	<a href="http://www.google.com/search?q=how+to+verify+PGP+%22.sig%22+signature+on+file">Learn how to verify a PGP-signed file &raquo;</a>
+          Por exemplo, se você tiver o GPG instalado, abra uma console de terminal, entre na pasta onde está localizado este arquivo e digite:<br />
+          <code>  gpg --recv-key <br />
+          gpg --verify --with-fingerprint index.html.sig index.html</code>
+         	<br /><br />e então verificar a "impressão digital" a assinatura com a <a href="http://girino.org/pgp">impressão digital PGP/GPG publicada</a>.<br /><br />
+        	<a href="http://www.google.com/search?q=how+to+verify+PGP+%22.sig%22+signature+on+file">Aprenda aqui como verificar uma assinatura PGP/GPG &raquo;</a>
       	</div>
 
-    		<span class="item"><b>Security Details</b></span>
-      	<span class="item" style="font-size: 75%;">For extra security, do not run this generator directly from the dogecoinpaperwallet.net website.<br />
-        Download the generator and run the HTML as a local file in your browser instead.</span>
+    		<span class="item"><b>Detalhes de segurança:</b></span>
+      	<span class="item" style="font-size: 75%;">Para garantir sua segurança, não rode este gerador diretamente do site.<br />
+        Faça o download do gerador e abra o HTMLcomo arquivo local no seu browser.</span>
 
-				<span class="item"><a href="https://github.com/wellsriley/dogecoinpaperwallet" target="_blank"><strong>Download</strong> (GitHub ZIP file)</a></span>
+				<span class="item"><a href="https://github.com/Dilmacoin/dilmapaperwallet" target="_blank"><strong>Faça o Download do</strong> (Arquivo ZIP no GitHub)</a></span>
 
-      	<span class="item" style="font-size: 75%;"><a href="?unittests=1">Run local encode/decode unit tests</a></span>
+      	<span class="item" style="font-size: 75%;"><a href="?unittests=1">Execute os "unit tests"</a></span>
 
-				<span class="item" style="font-size: 75%;"><a href="#" onClick="document.getElementById('siginfo').style.display='block'; return(false);">Validate PGP/GPG signature</a></span>
+				<span class="item" style="font-size: 75%;"><a href="#" onClick="document.getElementById('siginfo').style.display='block'; return(false);">Valie a assinatura PGP/GPGe</a></span>
 			</div>
 		</div>
 	</div>
