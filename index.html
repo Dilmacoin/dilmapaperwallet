@@ -12,12 +12,12 @@
 
     gpg --verify --with-fingerprint generate-wallet.html.sig generate-wallet.html
 
-    Wallet design is �Copyright 2014 Girino Vey. See below for other credits and copyrights.
+    Wallet design is �Copyright 2014 Cesar Augusto Azevedo and Girino Vey. See below for other credits and copyrights.
 
     **************************************************************
 		* github: http://github.com/Dilmacoin/dilmapaperwallet
-    * Please donate dilmacoin: DGirino9uDPavPkNejRHmhjdAwujaQhm7e
-    * Bitcoin works too: 1GiRiNoKznfGbt8bkU1Ley85TgVV7ZTXce
+    * Please donate dilmacoin: DGirino9uDPavPkNejRHmhjdAwujaQhm7e (Girino)
+    * Bitcoin works too: 1GiRiNoKznfGbt8bkU1Ley85TgVV7ZTXce (Girino) or 1R4VU1ag5xhsjXs6hbJ8fsCHi1CA3FBSs (Cesar)
     **************************************************************
 		* The starting point for this code was the excellent single-file bitaddress.org project.
 	  * Bitcoin Donation Address: 1NiNja1bUmhSoTXozBRBEtR8LeF9TGbZBN
@@ -6435,7 +6435,7 @@ Bitcoin.Util = {
 			border:1px solid #83c41a;
 			display:inline-block;
 			color:#ffffff !important;
-			font-family: Comic Sans MS;
+			font-family: Arial;
 			font-size:14px;
 			font-weight:bold;
 			font-style:normal;
@@ -6486,7 +6486,7 @@ Bitcoin.Util = {
 		  -webkit-animation: blink 0.75s infinite linear alternate;
 		  -webkit-font-smoothing: antialiased;
 		}
-		#generatelabelmovemouse { margin: 60px 150px; padding: 80px 30px; font-weight: bold; text-align: center; -webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;background-color:#fafafa;-webkit-box-shadow: #ccc 0 1px 4px;-moz-box-shadow: #ccc 0 1px 4px; box-shadow: #ccc 0 1px 4px;font-family:Comic Sans MS; }
+		#generatelabelmovemouse { margin: 60px 150px; padding: 80px 30px; font-weight: bold; text-align: center; -webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;background-color:#fafafa;-webkit-box-shadow: #ccc 0 1px 4px;-moz-box-shadow: #ccc 0 1px 4px; box-shadow: #ccc 0 1px 4px;font-family:Arial; }
 		#generatelabelbitcoinaddress { text-align: center;}
 
 		@media screen
@@ -6528,7 +6528,7 @@ Bitcoin.Util = {
 			#bulkstartindex, #paperlimit, #paperlimitperpage { width: 35px; }
 			#bulklimit { width: 45px; }
 
-			.footer { font-family: Comic Sans MS; font-size: 90%; clear: both; padding: 10px 0 10px 0; margin: 100px 20px 0; color: #999; border-top: 1px dotted #999;}
+			.footer { font-family: Arial; font-size: 90%; clear: both; padding: 10px 0 10px 0; margin: 100px 20px 0; color: #999; border-top: 1px dotted #999;}
 			.footer div span.item { padding: 5px; }
 			.footer .authorbtc { float: left; width: 470px; }
 			.footer .authorbtc span.item { text-align: left; display: block; padding-right: 20px; }
@@ -6599,25 +6599,25 @@ Bitcoin.Util = {
 						<div style="float: left; width: 500px; margin-top: -20px;">
 
 							<div style="border-radius:5px;background:#C6EAFF;padding:4px 20px 1px;font-size:15px;">
-								<p>Looking for a comprehensive guide to using dogecoin paper wallets? Check out <a href="http://dogecointutorial.com/paper-wallet.html" target="_blank">Dogecoin Tutorial</a>!</p>
+								<p>Para quem procura por um guia mais completo sobre o uso de carteiras de papel, recomendamos este da dogecoin, em inglês: <a href="http://dogecointutorial.com/paper-wallet.html" target="_blank">Dogecoin Tutorial</a>!</p>
 							</div>
 
-							<p>Here's an overview of what will happen, step by step:</p>
+							<p>Resumo do que você deverá fazer, passo a passo:</p>
 
 							<p>
-								<b id="calibratewallet" onClick="ninja.tabSwitch(this);">Step 1: Calibrate Printer</b><br />
-	              Before printing out a wallet you'll need to "calibrate" your output using the <em>zoom</em> and <em>horizontal&nbsp;shift</em> adjustments to accommodate your particular browser / printer combination. Without proper callibration, your wallet may print out too small or with a misaligned reverse side.
+								<b id="calibratewallet" onClick="ninja.tabSwitch(this);">Passo 1: Calibragem da Impressora</b><br />
+	              Antes de imprimir uma carteira você precisará "calibrar" o resultado impresso usando os ajustes de <em>zoom</em> e <em>horizontal shift</em> para adequar sua combinação de browser e impressora. Sem a calibração, sua carteira poderá ser impressa pequena demais para ser lida ou com a frente desalinhada do verso.
 	            </p>
 							<p>
-								<b id="paperwallet" onClick="ninja.tabSwitch(this);">Step 2: Print Front</b><br />
-	              Next we'll print out the front side of your wallet. A public address and private key will automatically be generated, or you can supply your own key if you are using 'vanitygen' or some other random key generator.
+								<b id="paperwallet" onClick="ninja.tabSwitch(this);">Passo 2: Imprimir a Frente</b><br />
+	              Em seguida, vamos imprimir a parte frontal da carteira. Um endereço público para sua carteira será gerado automaticamente, mas você pode substituí-lo por outro, gerado usando o 'vanitygen' ou qualquer outro gerador de chaves que preferir (Cuidado, não podemos garantir a segurança de chaves geradas por outros sistemas). 
 	            </p>
 							<p>
-								<b id="backwallet" onClick="ninja.tabSwitch(this);">Step 3: Print Back</b><br />
-	              Then you will put the same page back in your printer (but flipped over) to print out the back side of your wallet. This isn't just for good looks: the back side design includes additional tamper-resistant safeguards.
+								<b id="backwallet" onClick="ninja.tabSwitch(this);">Passo 3: Imprimir o Verso</b><br />
+	              Depois você deverá usar a mesma folha onde imprimiu a frente de volta na impressora (mas virada de ponta cabeça) para imprimir o verso da carteira. Não é apenas um recurso estético: O verso vai ajudar a proteger a carteira contra alterações.
 	            </p>
-							<p><b id="foldwallet" onClick="ninja.tabSwitch(this);">Step 4: Cut, Fold, Seal &amp; Fund</b><br />
-	              Find your scissors! The final step is to cut out your wallet, fold it, and seal it  with opaque (light-blocking) tape. Now you're ready to transfer dogecoins from your online holdings to your new wallet.
+							<p><b id="foldwallet" onClick="ninja.tabSwitch(this);">Passo 4: Recortar, Dobrar, Lacrar e Depositar Fundos</b><br />
+	              Busque sua tesoura: o passo final é recortar sua carteira, dobrá-la e lacrá-la com uma fita opaca (para impedir que seja lida contra a luz). Então você estará pronto para transferir suas Dilmacoins da sua carteira online ou no computador para sua nova carteira de papel. Guarde-a em local seguro!
 	            </p>
 	          </div>
 
@@ -6625,17 +6625,17 @@ Bitcoin.Util = {
 
               <img id="designPreview" src="images/finished-sample-sealed.png" width="400" height="266" alt="Sealed Wallet" >
 
-							<h2>Basic security checklist:</h2>
+							<h2><em>Checklist</em> básico de segurança:</h2>
 							<ul>
 	              <li>
 	                <script language="javascript">
 									  switch(window.location.protocol) {
 										 case 'http:':
 										 case 'https:':
-										   document.write('<span style="color: #990000;">&times; You appear to be running this generator off of a live website, which is not recommended for creating valuable wallets. Instead, use the download link at the bottom of this page to download the ZIP file from GitHub and run this generator offline as a \'local\' HTML file.</span>');
+										   document.write('<span style="color: #990000;">&times; Parece que você rodou o gerador a partir de um site na internet. Não é recomendado fazer isso para carteiras que irão guardar valores importantes. Ao invés disse, use o link de "download" na parte de baixo da página para baixar o ZIP diretamente do GitHub e rode o gerador <em>offline</em> como um arquivo HTML \'local\'.</span>');
 										   break;
 										 case 'file:':
-										   document.write('<span style="color: #009900;">&#10004; You are running this generator from your own download.</span><br />Tip: Make 100% sure you are offline by trying <a href="http://google.com" target="_blank">google.com</a></span>');
+										   document.write('<span style="color: #009900;">&#10004; Você está rodando o gerador a partir de seu próprio download.</span><br />Dica: Tenha 100% de certeza de estar <em>offline</em> tentando acessar o <a href="http://google.com" target="_blank">google.com</a></span>');
 										   break;
 										 default:
 									  }
@@ -6644,14 +6644,14 @@ Bitcoin.Util = {
 	              <li>
 	              	<script language="javascript">
 									  if (window.crypto && window.crypto.getRandomValues) {
-											 document.write('<span style="color: #009900;">&#10004; Your browser is capable of generating cryptographically random keys using window.crypto.getRandomValues</span>');
+											 document.write('<span style="color: #009900;">&#10004; Seu <em>browser</em> é capaz de gerar chaves criptograficamente aleatórias usando window.crypto.getRandomValues</span>');
 									  } else {
-											 document.write('<span style="color: #990000;">&times; Your browser does NOT support window.crypto.getRandomValues(), which is important for generating the most secure random numbers possible. Please use a more modern browser.</span>');
+											 document.write('<span style="color: #990000;">&times; Seu <em>browser</em> NÃO suporta window.crypto.getRandomValues(), que é importante para a geração de numeros aleatórios da forma mais segura possível. Por favor use um <em>browser</em> mais recente.</span>');
 									  }
 									</script>
 	              </li>
 	              <li>
-	              	<strong>?</strong> Are you using a secure operating system guaranteed to be free of spyware and viruses, for example, an <a href="https://bitcoinpaperwallet.com/#purchase" target="_blank">Ubuntu LiveCD</a>?
+	              	<strong>?</strong> Você tem certeza que está usando um Sistema Operacional seguro e garantidamente livre de <em>spyware</em> e virus, como por exemplo um <a href="https://bitcoinpaperwallet.com/#purchase" target="_blank">Ubuntu LiveCD</a>?
 	              </li>
 	            </ul>
 						</div>
@@ -6731,7 +6731,7 @@ Bitcoin.Util = {
 					<div id="backcommands">
 						<p id="backinstructions" class="instructions highlighted">Coloque a folha que você acabou de imprimir novamente na impressora (Assegure-se de que virou a folha!). E não se esqueça de imprimir em modo PAISAGEM!</p>
 						<span class="print">
-              <a href="#" class="nicerButton" onClick="doPrint();">Imprimir verso</a>
+              <a href="#" class="nicerButton" onClick="doPrint();">Imprimir Verso</a>
             </span>
 					</div>
           <br clear="all" />
@@ -6754,32 +6754,32 @@ Bitcoin.Util = {
 					  <h1>Como cortar, dobrar e usar sua carteira de papel:</h1>
 
 					  <div style="border-radius:5px;background:#C6EAFF;padding:4px 20px 1px;font-size:15px;margin:20px 0;">
-					  	<p>Looking for a comprehensive guide to using dogecoin paper wallets? Check out <a href="http://dogecointutorial.com/paper-wallet.html" target="_blank">Dogecoin Tutorial</a>!</p>
+					  	<p>Para quem procura por um guia mais completo sobre o uso de carteiras de papel, recomendamos este da dogecoin, em inglês: <a href="http://dogecointutorial.com/paper-wallet.html" target="_blank">Dogecoin Tutorial</a>!</p>
 					  </div>
 
-						<p>Cut out your wallet <em>(use the dotted lines on the front as a guide, not the back!)</em></p>
+						<p>Corte sua carteira <em>(siga a linha pontilhada da frente da carteira como guia. Não corte pelo verso)</em></p>
 
-            <p>Now fold the more narrow private key area in half, and then over again as indicated by the dotted lines in this diagram:</p>
+            <p>Agora dobre a parte da chave privada, a parte mais estreita, ao meio, e depois dobre de novo, conforme as linhas pontilhadas do diagrama abaixo:</p>
 
             <p><img src="./images/finished-folds.jpg" width="400" height="266" alt="Folding Diagram"></p>
 
-						<p>The final wallet will be a rectangle shape with the more narrow private key area folded over it, like this:</p>
+						<p>A carteira finalizada terá a forma de um retângulo, com a parte mais estreita da chave privada dobrada sobre ele, como a seguir:</p>
 
 						<p><img src="images/finished-sample.jpg" width="400" height="266" alt="Sample Wallet"></p>
 
-						<p>Finally seal your wallet by placing two strips of sturdy <strong>light-blocking</strong> tape over the top and bottom edges of the private (folded) area. A zip-seal bag will keep it safe from moisture (especially important for inkjet prints.)</p>
+						<p>Por fim, lacre sua carteira com duas tiras de fita grossa e opaca (que não ver contra a luz) cobrindo o topo e a base da area com as chaves privadas (já dobrada). Um saco plastico do tipo "zip" manterá sua carteira protegida da umidade (especialmente importante caso tenha usado uma impressora jato de tinta.)</p>
 
-            <p><span style="color:red;":>NEW:</span> <a href="https://bitcoinpaperwallet.com/?p=dogecoin#purchase" target="_blank" class="nicerButton" style="width: 550px;">Purchase hologram stickers and/or zip-sealing bags from BitcoinPaperWallet</a></p>
+            <p><a href="https://bitcoinpaperwallet.com/#purchase" target="_blank" class="nicerButton" style="width: 800px;">Você encontra etiquetas holográficas e sacos do tipo zip a venda no site BitcoinPaperWallet</a></p>
 
 						<p><img src="images/finished-sample-sealed.png" width="400" height="266" alt="Sealed Wallet"></p>
 
-						<h1>How to add funds to your wallet:</h1>
+						<h1>Como depositar fundos na sua carteira:</h1>
 
-						<p>Send dogecoins to the address (or QR code) where your wallet says "Such Public." and "Many Deposit."</p>
+						<p>Envie Dilmacoins para o endereço (ou QR code) da parte aberta da sua carteira (chave pública).</p>
 
-						<h1>How to withdraw funds from your wallet:</h1>
+						<h1>Como sacar o conteúdo da carteira:</h1>
 
-						<p>Peel open the folded-over side of the wallet twice to reveal the private key and QR code. You should expect to withdraw the entire balance of the wallet by importing it (or "sweeping" it) to a live wallet, e.g. dogecoin-qt</p>
+						<p>Remova o lacre da parte dobrada da sua carteira e abra para revelar a chave privada e seu respectivo QR code. Você irá recuperar todo seu saldo ao importar essa chave em uma carteira online ou conectada na internet (como a carteira dilmacoin-qt).</p>
 
 					</div>
 				</div>
@@ -6793,12 +6793,12 @@ Bitcoin.Util = {
 					<span class="item"><b>Ajude a manter a Dilmacoin Paper Wallet</b></span>
           <span class="item" style="font-size: 11px; font-family: 'Courier New', Courier, monospace;">
             <strong>Dilmacoin</strong>: DGirino9uDPavPkNejRHmhjdAwujaQhm7e<br />
-            <strong>Bitcoin</strong>:&nbsp; 1GiRiNoKznfGbt8bkU1Ley85TgVV7ZTXce<br />
+            <strong>Bitcoin</strong>:&nbsp; 1GiRiNoKznfGbt8bkU1Ley85TgVV7ZTXce (Girino) or 1R4VU1ag5xhsjXs6hbJ8fsCHi1CA3FBSs (Cesar)<br />
           </span>
         </div>
         <div class="copyright">
         	<p>
-        		&copy; Copyright 2014 <a href="http://dilmacoin.org">Dilmacoin</a><br />
+        		&copy; Copyright 2014 <a href="http://dilmacoin.org">Dilmacoin</a>, Girino Vey & Cesar Augusto Azevedo<br />
         		Other credits and JavaScript copyrights are included in the source.<br />
         		<strong>No warranty.</strong>
         	</p>
@@ -6821,7 +6821,7 @@ Bitcoin.Util = {
 
     		<span class="item"><b>Detalhes de segurança:</b></span>
       	<span class="item" style="font-size: 75%;">Para garantir sua segurança, não rode este gerador diretamente do site.<br />
-        Faça o download do gerador e abra o HTMLcomo arquivo local no seu browser.</span>
+        Faça o download do gerador e abra o HTML como arquivo local no seu browser.</span>
 
 				<span class="item"><a href="https://github.com/Dilmacoin/dilmapaperwallet" target="_blank"><strong>Faça o Download do</strong> (Arquivo ZIP no GitHub)</a></span>
 
